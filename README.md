@@ -1,5 +1,7 @@
 # Attack Path Analysis: Visualizing Lateral Movement and Exploitation Paths
 
+![Attack Path Analysis](headline.png)
+
 This notebook demonstrates how to perform **Attack Path Analysis**, building and extending on the [Vulnerability Prioritization and Exposure Management (VPEM)](https://github.com/pedroleitao-neo4j/cyber-vpem) use case graph in Neo4j. By mapping the relationships between external endpoints, vulnerable compute instances, and sensitive internal resources, organizations can visualize and remediate the actual routes an attacker would take during a breach.
 
 This is a critical extension of standard vulnerability management, shifting the focus from individual bugs to the **chained exploitation** that leads to data exfiltration.
