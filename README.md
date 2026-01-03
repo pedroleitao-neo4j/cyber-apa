@@ -35,7 +35,7 @@ Traditional security tools often operate in silos—scanners see vulnerabilities
 * **Blast Radius Quantification:** Instantly calculating every resource an attacker can "touch" once they land on a specific node.
 * **Chokepoint Identification:** Finding specific internal servers that act as gateways for multiple attack paths, making them high-value targets for hardening.
 
-## The Resulting Schema
+## The Resulting Schema
 
 The extended Cyber APA graph schema builds on the VPEM model, with the addition of a simple `CAN_REACH` relationship between `ComputeInstance` nodes to simulate lateral movement opportunities.
 
