@@ -6,12 +6,17 @@ This notebook demonstrates how to perform **Attack Path Analysis**, building and
 
 This is a critical extension of standard vulnerability management, shifting the focus from individual bugs to the **chained exploitation** that leads to data exfiltration.
 
+This example includes two main notebooks:
+
+1. **[Data Ingestion](loader.ipynb)**: Loads additional data into the existing VPEM graph, specifically simulating lateral movement paths between compute instances.
+2. **[Attack Path Analysis](apa.ipynb)**: Demonstrates Cypher queries to identify multi-hop attack paths from internet-facing vulnerabilities to critical "Crown Jewel" assets, visualizing the results.
+
 ## Use Case Overview
 
 The Attack Path Analysis use case demonstrates how to:
 
 * **Identify Footholds:** Locate internet-facing assets with critical, exploited vulnerabilities (Scenario A & C).
-* **Visualize Lateral Movement:** Trace the internal network paths (`CAN_REACH`) that allow an attacker to move from a breached gateway to isolated internal workers (this is a new relationship added from the VPEM use case).
+* **Visualize Lateral Movement:** Trace the internal network paths (`CAN_REACH`) that allow an attacker to move from a breached gateway to isolated internal workers (this is a new relationship added to the VPEM use case schema).
 * **Map Impact to Crown Jewels:** Discover the final hop from a compromised internal host to a "P0" Tier application or sensitive cloud resource.
 
 ## Data Sources
@@ -29,6 +34,12 @@ Traditional security tools often operate in silos—scanners see vulnerabilities
 * **Beyond the Perimeter:** Visualizing how a vulnerability in a public-facing API acts as the "key" to an internal database.
 * **Blast Radius Quantification:** Instantly calculating every resource an attacker can "touch" once they land on a specific node.
 * **Chokepoint Identification:** Finding specific internal servers that act as gateways for multiple attack paths, making them high-value targets for hardening.
+
+## The Resulting Schema
+
+The extended Cyber APA graph schema builds on the VPEM model, with the addition of a simple `CAN_REACH` relationship between `ComputeInstance` nodes to simulate lateral movement opportunities.
+
+![Cyber APA Schema](apa-schema.png)
 
 ## Architecture
 
