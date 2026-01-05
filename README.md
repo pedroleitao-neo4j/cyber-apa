@@ -13,8 +13,6 @@ This example includes two main notebooks:
 1. **[Data Ingestion](loader.ipynb)**: Loads additional data into the existing VPEM graph, specifically simulating lateral movement paths between compute instances.
 2. **[Attack Path Analysis](apa.ipynb)**: Demonstrates Cypher queries to identify multi-hop attack paths from internet-facing vulnerabilities to critical "Crown Jewel" assets, visualizing the results.
 
-Based on your repository's focus on the technical implementation of mapping lateral movement, here is a short, non-technical description of APA that provides the necessary context for a broader audience:
-
 ### What is Attack Path Analysis (APA) and Why Does It Matter?
 
 In cyber security, defending the perimeter isn't enough. Savvy attackers rarely land directly on their ultimate target; they land on a weak point and then move "sideways" through the network until they find what they want.
