@@ -6,6 +6,8 @@ This notebook demonstrates how to perform **Attack Path Analysis**, building and
 
 This is a critical extension of standard vulnerability management, shifting the focus from individual bugs to the **chained exploitation** that leads to data exfiltration.
 
+![Vulnerability Attack Path](vulnerability-view-graph.png)
+
 This example includes two main notebooks:
 
 1. **[Data Ingestion](loader.ipynb)**: Loads additional data into the existing VPEM graph, specifically simulating lateral movement paths between compute instances.
