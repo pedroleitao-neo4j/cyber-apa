@@ -77,7 +77,9 @@ Think of an attacker crossing a river:
 
 # Resulting Schema
 ### Extended for lateral movement
-![w:90%](apa-schema.png)
+![bg right:55% contain](apa-schema.png)
+
+* New `CAN_REACH` edges link ComputeInstances based on network paths and ports.*
 
 ---
 
